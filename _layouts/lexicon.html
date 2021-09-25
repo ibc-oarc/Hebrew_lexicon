@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-{% include head.html %}
-{% assign morpholist = page.morpholist | split: ";" %}
-{% assign indexes = site.data.precompiled_lexicons | where: "nameid", page.nameid | first | map: "links" | first | split: ","  %}
-<h3>{{page.title}} {% if page.ordered==site.landingpartial1 %}{{site.landingpartial5}}{% elsif page.ordered==site.landingpartial3 %}{{site.landingpartial6}}{%endif%}</h3>{%if morpholist.size > 0 %}<p style="width:90%">{{ indexes | size }} {{site.lexicon1entries}} {%unless page.nameid contains "lexicon"%}{{-site.lexicon2marked}} {% for morph in morpholist %}<a class="shadow" title="{{site.data.morphologycodes | where: "key", morph | first | map: "fulldescription"}}"><em>{{site.data.morphologycodes | where: "key", morph | first | map: "value"}}</em></a>{% unless forloop.last %}, {%endunless%}{% endfor %} {%endunless%}</p>{%endif%}
-<div style="display: flex;"><p style="margin-bottom:27px;width:100%">{%for index in indexes %}{% assign indexdesc = index| minus: 1 %}{%assign x = site.data.sample_comma_separated_TBESH_formatted[indexdesc]%}<span id="toc"><span style="color:darkgray;">{{x.strongNumber}}</span><a class="shadow" href="/{{site.siteprefix}}/w/{{x.strongNumber}}.html"><span class="ss st">{{x.phonemes}}</span> <span id="bh">{{x.hebWord}}</span> ‘{{x.heading | split: "|" | join: " / "}}’</a></span>{% endfor %}</p></div>
-</article>
-{% include footer.html %}
-</body></html>
