@@ -1,0 +1,20 @@
+lexicon: All lexemes
+common: All lexemes except proper names
+nouns: Nouns
+verbs: Verbs
+adjectives: Adjectives
+adverbs: Adverbs
+interjections: Interjections
+prepositions: Prepositions
+demonstratives: Demonstrative pronouns
+personal: Personal pronouns
+conjunctions: Conjunctions
+particles: Particles
+interrogatives: Interrogatives
+negatives: Negatives
+pronouns: Pronouns
+relatives: Relative pronouns
+persons: Persons
+locations: Locations
+gentilics: Gentilics
+titles: Titles
