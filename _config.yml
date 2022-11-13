@@ -20,8 +20,8 @@ firstyear: 2014
 github: "https://github.com/ibc-oarc/Hebrew_lexicon"
 keyboardreminder: 'To navigate back- and forwards, use the arrow keys <span class="shadow">←</span> and <span class="shadow">→</span> on your keyboard<br>'
 
-website: "https://bh.seveleu.com"
-readersite: "https://bh.seveleu.com"
+website: "https://lex.ibc.oarc.science"
+readersite: "https://gloss.ibc.oarc.science"
 readersiteprefix: en
 siteprefix: en
 lang: en
